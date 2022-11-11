@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}
+Education
+{% endblock %}
+
+{% block Content %}
+
+<nav class="navbar navbar-light" style="background-color:#004d4d">
+    <a  id="one" class="nav-item nav-link" href="{{url_for('index')}}"><b>Home</b></a>
+    <a  id="one" class="nav-item nav-link" href="{{url_for('Category')}}"><b>Back</b></a>
+</nav>
+<body id="a" background="{{ url_for('static', filename='images/background3.jpg') }}">
+<br>
+
+<div class="container" style="margin-left: 110px;">
+<div class="row"><div class="col-sm-3">
+<div class="card" style="width: 18rem;height: 22rem;">
+    <img src="../static/images/deepL.png" class="card-img-top" alt="missing">
+    <div class="card-body">
+    <h5 class="card-title">Deep Learning</h5>
+    <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/4W7N4U9YG2CE" target="_blank" class="btn btn-primary">Trace Back</a>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+<div class="card" style="width: 18rem;height: 22rem;">
+    <img src="../static/images/Python.png" alt="missing" height = "215">
+    <div class="card-body">
+    <h5 class="card-title">Python</h5>
+    <a href="https://www.udemy.com/certificate/UC-YWLYJ74X/" target="_blank" class="btn btn-primary">Trace Back</a>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+    <div class="card" style="width: 18rem;height: 22rem;">
+        <img src="../static/images/machine.jpg" style="height: 13.5rem;" class="card-img-top" alt="missing">
+        <div class="card-body">
+        <h5 class="card-title">Machine Learning</h5>
+        <a href="https://www.udemy.com/certificate/UC-SGC7ZML0/" target="_blank" class="btn btn-primary">Trace Back</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="card" style="width: 18rem;height: 22rem;">
+            <img src="../static/images/Tableau.png" style="height: 13.5rem;" class="card-img-top" alt="missing">
+            <div class="card-body">
+            <h5 class="card-title">Tableau</h5>
+            <a href="https://www.udemy.com/certificate/UC-627c30f5-e3c0-48f1-9977-b29d1295ad8d/" target="_blank" class="btn btn-primary">Trace Back</a>
+            </div>
+        </div>
+    </div> 
+
+</div>
+</div>
+<h1 style="text-align: center; font-size: 150px; color: #bb7dfe;">Still Learning</h1>
+
+{% endblock %}

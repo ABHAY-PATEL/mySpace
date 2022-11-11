@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}
+Experience
+{% endblock %}
+
+{% block Content %}
+<nav class="navbar navbar-light" style="background-color:#004d4d">
+    <a  id="one" class="nav-item nav-link" href="{{url_for('index')}}"><b>Home</b></a>
+    <a  id="one" class="nav-item nav-link" href="{{url_for('Category')}}"><b>Back</b></a>
+</nav>
+<body id="a" background="{{ url_for('static', filename='images/office.jpg') }}">
+
+    <div class="container">
+        <p  style="float: left;"><img class="cropped1"  src="{{ url_for('static', filename='images/cosmonet.png') }}"></p>
+        <p id="two" style="text-align: justify; color: whitesmoke; background-color: teal; margin: 20px;" ><strong>&emsp;
+            2 Months Duration.    First internship of mine was at 'COSMONET Solutions'.Cosmonet Solutions is an IT business solutions and service provider. 
+            It is built on principles and values that have emanated from years of experience derived from its leadership team, employees, 
+            insightful guidance from thoughtful leaders, futurists and most of all from their customers. I worked on medical image 
+            processing. Pydicom ,Matplotlib ,SimpleITK packages were used. The ultimate aim was to find the diameter
+            of the pulmonary artery from the chest CT Scan and compare its diameter to the desired diameter of the normal pulmonary 
+            artery and inference can be made whether any disorder is present or not.</strong>  </p>
+    </div>
+    <br>
+    <br>    
+    <br>
+    <div class="container">
+        <p  style="float: left;"><img class="cropped1"  src="{{ url_for('static', filename='images/SandLogic.png') }}"></p>
+        <p id="two" style="text-align: justify; color: whitesmoke; background-color: teal; margin: 20px;" ><strong>&emsp;
+            5 Months Duration.   Second internship of mine was at 'SANDLOGIC Technologies'. The company is an AI driven platform,
+            providing smart solutions to its clients. I worked on annotations of images and videos along side working on machine learning models. And reading Journals
+            and papers for widening our knowledge to provide optimum solution.</strong>  </p>
+    </div>
+    <br><br><br><br><br>
+    <div class="container">
+        <p  style="float: left;"><img class="cropped1"  src="{{ url_for('static', filename='images/dataCorp.jpg') }}"></p>
+        <p id="two" style="text-align: justify; color: whitesmoke; background-color: teal; margin: 20px;" ><strong>&emsp;Was
+            employed as JR. Software Engineer @ 'DataCorp Traffic'. The company is an AI driven platform, conducting surveys of 
+            transportations and traffic and providing smart solutions for it to our clients. Worked on mllenz product of the company
+            which acts as a flask application with use of shell scripts.
+            Henceforth, more to learn and work.
+        </strong>  </p>
+    </div>
+    
+
+{% endblock %}

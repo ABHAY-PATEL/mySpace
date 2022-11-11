@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}
+Category
+{% endblock %}
+
+{% block Content %}
+
+<nav class="navbar navbar-light" style="background-color:#004d4d">
+    <a  id="one" class="nav-item nav-link" href="{{url_for('index')}}"><b>Home</b></a>
+</nav>
+<body id="a" background="{{ url_for('static', filename='images/background2.jpg') }}">
+    <br>
+    <br>
+    <div class="container" style="margin-left: 110px;">
+        <div class="row"><div class="col-sm-3">
+    <div class="card" style="width: 18rem;height: 22rem;">
+        <img src="static/images/work.jpg" class="card-img-top" alt="missing">
+        <div class="card-body">
+        <h5 class="card-title">Work Experience</h5>
+        <p class="card-text">Learning things from industrial point of view.</p>
+        <a href="{{url_for('Experience')}}" class="btn btn-primary">Trace Back</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3">
+    <div class="card" style="width: 18rem;height: 22rem;">
+        <img src="static/images/education.jpg" class="card-img-top" alt="missing">
+        <div class="card-body">
+        <h5 class="card-title">Education</h5>
+        <p class="card-text">From abc to xyz. And from 1 2 3 to infinity.</p>
+        <a href="{{url_for('Education')}}" class="btn btn-primary">Trace Back</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3">
+        <div class="card" style="width: 18rem;height: 22rem;">
+            <img src="static/images/project.png" style="height: 18rem;" class="card-img-top" alt="missing">
+            <div class="card-body">
+            <h5 class="card-title">Projects</h5>
+            <p class="card-text">Something what could be practically understood.</p>
+            <a href="{{url_for('Projects')}}" class="btn btn-primary">Trace Back</a>
+            </div>
+        </div>
+        </div>
+    
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem;height: 22rem;">
+                <img src="static/images/certification.png" style="height: 18rem;" class="card-img-top" alt="missing">
+                <div class="card-body">
+                <h5 class="card-title">Certification</h5>
+                <p class="card-text">Platforms that teach you much more then four walls of a class.</p>
+                <a href="{{url_for('Certification')}}" class="btn btn-primary">Trace Back</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+{% endblock %}

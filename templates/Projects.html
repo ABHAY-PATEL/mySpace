@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}
+Education
+{% endblock %}
+
+{% block Content %}
+
+<nav class="navbar navbar-light" style="background-color:#004d4d">
+    <a  id="one" class="nav-item nav-link" href="{{url_for('index')}}"><b>Home</b></a>
+    <a  id="one" class="nav-item nav-link" href="{{url_for('Category')}}"><b>Back</b></a>
+</nav>
+<body id="a" background="{{ url_for('static', filename='images/projects.jpg') }}">
+    <br>
+    <div class="container" style="margin-left: 110px;">
+        <div class="row"><div class="col-sm-3">
+        <div class="card" style="width: 18rem;height: 22rem;">
+            <img src="../static/images/corona.jpg" class="card-img-top" alt="missing">
+            <div class="card-body">
+            <h5 class="card-title">Covid19 Data Analysis Notebook</h5>
+            <a href="https://github.com/ABHAY-PATEL/Machine-learning/blob/master/covid19%20data%20analysis%20notebook.ipynb" target="_blank" class="btn btn-primary">Trace Back</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card" style="width: 18rem;height: 22rem;">
+                <img src="../static/images/cnn.jpg" class="card-img-top" alt="missing">
+                <div class="card-body">
+                <h5 class="card-title">Image Classification with CNN using Keras</h5>
+                <a href="https://github.com/ABHAY-PATEL/Machine-learning/blob/master/keras_CNN.ipynb" target="_blank" class="btn btn-primary">Trace Back</a>
+                </div>
+            </div>
+            </div>
+        
+            <div class="col-sm-3">
+                <div class="card" style="width: 18rem;height: 22rem;">
+                    <img src="../static/images/face.png" class="card-img-top" alt="missing">
+                    <div class="card-body">
+                    <h5 class="card-title">Face Detection</h5>
+                    <a href="https://github.com/ABHAY-PATEL/Machine-learning/blob/master/FaceDetection.png" target="_blank" class="btn btn-primary">Trace Back</a>
+                    </div>
+                </div>
+                </div>
+        
+        </div>
+        </div>
+        <h1 style="text-align: center; font-size: 150px; color: #351c0d;">Still Building</h1>
+        
+
+{% endblock %}

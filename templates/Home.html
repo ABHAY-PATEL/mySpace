@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}
+Abhay Patel
+{% endblock %}
+
+{% block Content %}
+<nav class="navbar navbar-light" style="background-color:royalblue">
+     <a id="one" class="nav-item nav-link" class="btn btn-light" href="{{url_for('index')}}"><b>Home</b></a>
+     <a id="one" class="nav-item nav-link" href="{{url_for('Category')}}"><b>Know Me</b> </a>
+</nav>
+
+<body background="{{ url_for('static', filename='images/background1.jpg') }}">
+     <h1 class="first" style="text-align: center;"><img src="static/images/LOGO.png" alt="missing"><b><span
+                    class="colorss">Welcome To My </span><span id="SPHERE">Sphere</span></b></h1>
+     <br>
+     <br>
+     <img class="second" src="static/images/IMG_20161230_142559956.jpg" style="float: right;"
+          alt="We will be right back">
+     <br>
+     <br>
+     <p class="third" style="text-align: center;"> &emsp;Great Machine Learning enthusiast. Enjoy coding in python.
+          Known to Tableau. Understanding of DS and Algorithms.
+          Ex-intern at "COSMONET Solutions" and "SandLogic Technologies". ECE background. Keen learner. High Hopes. </p>
+     <br>
+
+     <p class="third" style="text-align: center;">&emsp;Worked as Jr. Software Engineer @ DataCorp Traffic Private
+          Limited
+          <br> BE from Acharya Institute Of Technology - Bangalore in Electronics and Communication <br><br>From
+          Jabalpur<br>
+          And yaa my name is <span class="colorss">Abhay Patel</span>
+     </p>
+
+     {% endblock %}

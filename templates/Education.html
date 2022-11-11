@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+Education
+{% endblock %}
+
+{% block Content %}
+
+<nav class="navbar navbar-light" style="background-color:#004d4d">
+    <a  id="one" class="nav-item nav-link" href="{{url_for('index')}}"><b>Home</b></a>
+    <a  id="one" class="nav-item nav-link" href="{{url_for('Category')}}"><b>Back</b></a>
+</nav>
+<body id="a" background="{{ url_for('static', filename='images/books.jpg') }}">
+    <br>
+<div class="container">
+<p  style="float: left;"><img class="cropped2"  src="{{ url_for('static', filename='images/sppslogo.png') }}"></p>
+<p id="two" style="text-align: justify; color: darkgreen; background-color: lightcyan; margin: 20px;" ><strong>&emsp;
+My Schooling Space <br>
+<a href="https://satyaprakash.edu.in/"> &emsp;Initial steps of learning</a> </strong>  </p>
+<video controls width="560" height="315" src="{{ url_for('static', filename='videos/spps.mp4') }}" type="video/mp4"></video>
+</div>
+<br>
+<br>
+<div class="container">
+    <p  style="float: left;"><img class="cropped2"  src="{{ url_for('static', filename='images/AITlogo.png') }}"></p>
+    <p id="two" style="text-align: justify; color: darkgreen; background-color: lightcyan; margin: 20px;" ><strong>&emsp;
+    My College Space <br>
+    <a href="https://www.acharya.ac.in/">&emsp;UnderGrad Institute</a> </strong>  </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ceMdsl00a3U">
+    </iframe>
+    </div>
+
+{% endblock %}
